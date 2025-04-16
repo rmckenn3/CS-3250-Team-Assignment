@@ -6,7 +6,7 @@ Stores document data.
 #Document class
 class Document:
     #initialize variables
-    def __init__(self, id, type, data):
+    def __init__(self, id, type, data=None):
         self.id = id
         self.type = type
         self.data = data

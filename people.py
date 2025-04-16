@@ -6,12 +6,13 @@ Stores information about customers.
 #People class
 class People:
     #initialize variables
-    def __init__(self, name, birthday, phone, email, address):
+    def __init__(self, name, birthday, ssn, address, email=None, phone=None):
         self.name = name
         self.birthday = birthday
+        self.ssn = ssn
+        self.address = address
         self.phone = phone
         self.email = email
-        self.address = address
     #end __init__
 
 #end People class
