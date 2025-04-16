@@ -4,7 +4,7 @@ Stores information about customers.
 #imports
 
 #People class
-class People:
+class User:
     #initialize variables
     def __init__(self, name, birthday, ssn, address, email=None, phone=None):
         self.name = name

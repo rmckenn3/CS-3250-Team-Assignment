@@ -6,10 +6,10 @@ from datetime import datetime
 #Transaction class
 class Transaction:
     #initialize variables
-    def __init__(self, merchant, amount, card):
-        self.merchant = merchant
+    def __init__(self, source, destination, amount):
+        self.source = source
+        self.destination = destination
         self.amount = amount
-        self.card = card
         self.date = datetime.now().date()
     #end __init__
 

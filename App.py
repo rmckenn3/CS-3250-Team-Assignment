@@ -4,7 +4,7 @@ Acts as a user interface and runs main.
 #class file imports
 from account import Account
 from document import Document
-from people import People
+from user import User
 from transaction import Transaction
 
 #imports
