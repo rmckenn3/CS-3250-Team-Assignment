@@ -15,13 +15,13 @@ class Document:
         self.id = Document.index  # Assign a unique ID to the document
         self.type = type  # Type of the document (e.g., "PDF", "Word")
         self.data = data  # Content of the document
-        self.date = datetime.strftime("%Y-%m-%d %H:%M")  # Timestamp of the document creation
+        self.date = datetime.now().strftime("%Y-%m-%d %H:%M")  # Timestamp of the document creation
     #end __init__
 
     # Edit the document content
     def edit(self, data):
         self.data = data  # Update the document content
-        self.date = datetime.strftime("%Y-%m-%d %H:%M")  # Update the timestamp
+        self.date = datetime.now().strftime("%Y-%m-%d %H:%M")  # Update the timestamp
         print(f"Document {self.id} edited successfully.")
     #end edit
 

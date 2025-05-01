@@ -3,11 +3,13 @@ Transaction class contains methods to handle purchases and transfers.
 """
 #imports
 from datetime import datetime
+from document import Document
 
 # Transaction class
-class Transaction:
+class Transaction(Document):
     # Initialize variables for a transaction
     def __init__(self, source, destination, amount):
+        super().__init__(type="Transaction")  # Call the parent class constructor
         self.source = source  # Source of the transaction
         self.destination = destination  # Destination of the transaction
         self.amount = amount  # Amount involved in the transaction
