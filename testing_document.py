@@ -1,7 +1,13 @@
 import unittest
 from class_document import Document
 
-class TestAccount(unittest.TestCase):    
+class TestDocument(unittest.TestCase):
+    def test_document_initialization(self):
+        doc = Document("PDF", "Sample data")
+        self.assertEqual(doc.type, "PDF")
+        self.assertEqual(doc.data, "Sample data")
+        self.assertTrue(isinstance(doc.date, str))  
+
     def test_edit_document(self):
         doc = Document("Word", "Initial content")
         old_date = doc.date
