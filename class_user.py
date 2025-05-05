@@ -2,7 +2,7 @@
 Stores information about customers.
 """
 #imports
-from account import Account
+from class_account import Account
 
 # User class
 class User:

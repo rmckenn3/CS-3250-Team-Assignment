@@ -2,8 +2,8 @@
 Manages account information.
 """
 #imports
-from transaction import Transaction
-from user import User
+from class_transaction import Transaction
+from class_user import User
 
 # Account class
 class Account:

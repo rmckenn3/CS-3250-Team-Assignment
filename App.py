@@ -2,10 +2,10 @@
 Acts as a user interface and runs main.
 """
 #class file imports
-from account import Account
-from document import Document
-from user import User
-from transaction import Transaction
+from class_account import Account
+from class_document import Document
+from class_user import User
+from class_transaction import Transaction
 
 def main():
     users = []
